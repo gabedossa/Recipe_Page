@@ -11,7 +11,7 @@
 
 <h3>Purpose:</h3>
 <p>
-The challenge is centered around writing meaningful, well-structured code through the proper use of HTML5 semantic tags. By adopting a thoughtful approach to each element's purpose—such as using article, header, nav and footer in the right context—you'll ensure that your web pages are not only functional but also intuitive and accessible for all users, including those relying on assistive technologies.
+The challenge is centered around writing meaningful, well-structured code through the proper use of HTML5 semantic tags. By adopting a thoughtful approach to each element's purpose—such as using [article, header, nav and footer] in the right context—you'll ensure that your web pages are not only functional but also intuitive and accessible for all users, including those relying on assistive technologies.
 </p>
 
 <h3>Key Goals:</h3>
