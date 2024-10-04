@@ -6,6 +6,7 @@
   </a>
 </p>
 
+<h3>Description:</h3>
 This project is designed to improve the understanding and application of semantic HTML. The goal is to thoughtfully choose and implement the most appropriate HTML elements for different types of content, ensuring clarity and accessibility across the structure of the webpage. By focusing on the correct use of HTML5 semantic tags, this challenge emphasizes the importance of well-structured and meaningful code.
 
 Key Objectives:
