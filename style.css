@@ -1,0 +1,150 @@
+/*Colocando fontes locais no projeto*/
+  /*Outfit*/
+@font-face {
+  font-family: 'Outfit';
+  src: url('./font/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100; /* Peso 100 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./font/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400; /* Peso normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./font/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 700; /* Peso bold */
+  font-style: normal;
+}
+
+ /*Young Serif*/
+ @font-face {
+  font-family: 'Young Serif';
+  src: url('./font/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 100; /* Peso 100 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./font/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400; /* Peso normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./font/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 700; /* Peso bold */
+  font-style: normal;
+}
+
+/*project style*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffead6 ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    color: #333;
+  }
+  .Container{
+    width: 40%;
+    min-width: 650px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .Content_card{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff; /* Cor branca corrigida */
+    padding: 50px 100px;
+  }
+
+  .top_img{
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    background-image: url("./img/image-omelette.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .title{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .explanationText{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .prearation-time{
+    width: 100%;
+    padding: 15px 20px;
+    margin:15px;
+    border-radius: 10px;
+    background-color: #fae9ef;
+  }
+  .prearation-time > h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #5c3333;
+    margin-bottom: 10px;
+  }
+
+  ul{
+    margin:15px;
+  }
+
+  .titleIngrediente{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5c3333;
+    margin-bottom: 10px;
+  }
+
+  .division{
+    width: 100%;
+    height: 2px;
+    background-color: #DDD;
+  }
+
+  ol > li{
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  table{
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  th, td{
+    width: 50%;
+    text-align: left;
+    border: 1px solid #CCC;
+  }
