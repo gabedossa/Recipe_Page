@@ -1,215 +1,157 @@
-/* Estilos Globais e Fontes */
-/* Outfit */
-@font-face {
-  font-family: 'Outfit';
-  src: url('./font/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100; /* Peso 100 */
-  font-style: normal;
+/*
+  Improved styles for the Recipe Page.
+  This stylesheet uses CSS variables, relative units and semantic class names.
+*/
+
+/* Colour palette */
+:root {
+  --background: #ffead6;
+  --card-bg: #ffffff;
+  --accent: #5c3333;
+  --accent-light: #fae9ef;
+  --text: #333333;
+  --border: #dddddd;
+  --footer: #666666;
 }
 
-@font-face {
-  font-family: 'Outfit';
-  src: url('./font/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-  font-weight: 400; /* Peso normal */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Outfit';
-  src: url('./font/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-  font-weight: 700; /* Peso bold */
-  font-style: normal;
-}
-
-/* Young Serif */
-@font-face {
-  font-family: 'Young Serif';
-  src: url('./font/young-serif/YoungSerif-Regular.ttf') format('truetype');
-  font-weight: 100; /* Peso 100 */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Young Serif';
-  src: url('./font/young-serif/YoungSerif-Regular.ttf') format('truetype');
-  font-weight: 400; /* Peso normal */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Young Serif';
-  src: url('./font/young-serif/YoungSerif-Regular.ttf') format('truetype');
-  font-weight: 700; /* Peso bold */
-  font-style: normal;
-}
-
-/* Estilo Base */
+/* Reset basic elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.background {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header.hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #ffead6;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 100%;
-  min-height: 100vh;
-  color: #333;
-  padding: 20px; /* Espaço para pequenas telas */
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
 }
 
-.Container {
-  width: 90%; /* Ajuste responsivo */
-  max-width: 650px; /* Limita a largura em telas maiores */
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.Content_card {
-  width: 100%;
-  border-radius: 10px;
-  background-color: #fff;
-  padding: 30px;
-}
-
-.top_img {
-  width: 100%;
-  height: 150px;
-  border-radius: 15px;
-  background-image: url("./img/image-omelette.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
-}
-
-.title {
-  font-family: 'Young Serif', serif;
+header.hero h1 {
+  font-size: 2rem;
   font-weight: 400;
-  font-size: 20px; /* Ajuste para pequenas telas */
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  color: var(--accent);
 }
 
-.explanationText {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
+header.hero p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
-.prearation-time {
+.hero-image {
   width: 100%;
-  padding: 10px; /* Ajustado para pequenas telas */
-  margin: 15px 0;
-  border-radius: 10px;
-  background-color: #fae9ef;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
-.prearation-time > h2 {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 16px; /* Ajustado */
-  color: #5c3333;
-  margin-bottom: 10px;
-}
-
-ul {
-  margin: 15px;
-}
-
-.titleIngrediente {
-  font-family: 'Young Serif', serif;
-  font-weight: 400;
-  font-size: 20px; /* Ajuste para pequenas telas */
-  color: #5c3333;
-  margin-bottom: 20px;
-}
-
-.division {
+.hero-image img {
   width: 100%;
-  height: 2px;
-  background-color: #DDD;
+  display: block;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
-ol > li {
-  font-family: 'Outfit', sans-serif;
-  font-size: 14px;
-  margin-bottom: 10px;
+main {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+section ul,
+section ol {
+  margin-left: 1.5rem;
+}
+
+section li {
+  margin-bottom: 0.5rem;
+}
+
+section.prep-time ul li strong {
+  color: var(--accent);
 }
 
 table {
-  margin-top: 10px;
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
 }
 
 th,
 td {
-  width: 50%;
+  border: 1px solid var(--border);
+  padding: 0.5rem;
   text-align: left;
-  padding-left: 5px;
-  border: 1px solid #CCC;
+}
+
+th {
+  background-color: var(--accent-light);
+  color: var(--accent);
 }
 
 footer {
-  width: 100%;
   text-align: center;
-  margin-top: 15px;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: var(--footer);
 }
 
-a {
+footer a {
+  color: var(--accent);
   text-decoration: none;
 }
 
-a:hover {
-  cursor: pointer;
-  color: blueviolet;
+footer a:hover {
+  text-decoration: underline;
 }
 
-/* Responsividade */
+/* Accessibility helper to hide text visually but keep it for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .Container {
-    width: 100%;
-    padding: 10px;
+  header.hero,
+  main {
+    padding: 1rem;
   }
-
-  .Content_card {
-    padding: 15px; /* Reduzido em telas menores */
+  header.hero h1 {
+    font-size: 1.75rem;
   }
-
-  .title,
-  .titleIngrediente {
-    font-size: 18px;
-  }
-
-  .prearation-time > h2 {
-    font-size: 14px;
-  }
-
-  .explanationText,
-  ol > li {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .top_img {
-    height: 120px;
-  }
-
-  .title,
-  .titleIngrediente {
-    font-size: 16px;
-  }
-
-  .prearation-time > h2 {
-    font-size: 12px;
-  }
-
-  .explanationText,
-  ol > li {
-    font-size: 10px;
+  section h2 {
+    font-size: 1.25rem;
   }
 }
