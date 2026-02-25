@@ -1,23 +1,35 @@
-#001 - Recipe_Page
-<h3>Technologies:</h3>
-<p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css" />
-  </a>
-</p>
+# Simple Omelette Recipe
 
-<h3>Description:</h3>
-<p>This project aims to deepen your understanding and mastery of semantic HTML by emphasizing the importance of selecting and implementing the most suitable HTML elements for each type of content. By carefully considering the role of each tag, you'll enhance the clarity, accessibility, and overall structure of your webpage, ensuring that it is both user-friendly and search-engine optimized.</p>
+This project is a revised version of the **Recipe Page** challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).  The goal was to build a semantic, accessible and responsive recipe page using only HTML and CSS.
 
-<h3>Purpose:</h3>
-<p>
-The challenge is centered around writing meaningful, well-structured code through the proper use of HTML5 semantic tags. By adopting a thoughtful approach to each element's purpose—such as using [article, header, nav and footer] in the right context—you'll ensure that your web pages are not only functional but also intuitive and accessible for all users, including those relying on assistive technologies.
-</p>
+## ✨ Principais melhorias
 
-<h3>Key Goals:</h3>
-<ul>
-  <li>Clarity: Implement a logical and organized structure that enhances the readability and maintainability of the code.</li>
-  <li>Accessibility: Improve web accessibility by using semantic tags that convey meaning to assistive technologies and browsers.</li>
-  <li>SEO Optimization: Boost search engine rankings by ensuring your content is properly structured and interpretable by web crawlers.</li>
-  <li>Maintainability: Facilitate easier updates and scalability through clear, semantic HTML.</li>
-</ul>
+- **HTML semântico** – A marcação utiliza elementos como `<header>`, `<main>`, `<section>`, `<figure>` e `<footer>` para definir a estrutura do documento e facilitar a navegação de leitores de tela.
+- **Acessibilidade** – Todas as imagens possuem atributo `alt`, e elementos visuais incluem classes para serem ocultados da tela mas mantidos para tecnologias assistivas.
+- **Responsividade** – O layout usa unidades relativas (`rem`, `%`) e CSS Variables.  Media queries adaptam os tamanhos de fonte e espaçamentos para telas menores.
+- **Estilo limpo** – Cores definidas através de variáveis CSS, bordas sutis e tipografia legível.
+
+## 💪 Tecnologias
+
+- HTML5
+- CSS3
+
+## 📦 Estrutura
+
+```
+Recipe_Page/
+  ├─ index.html      # página principal com HTML semântico
+  ├─ style.css       # estilos globalizados e responsivos
+  ├─ img/            # imagens utilizadas (omelette)
+  └─ README.md       # este arquivo
+```
+
+## ⚛️ Como executar
+
+1. Clone este repositório ou copie os arquivos para um diretório local.
+2. Abra `index.html` em seu navegador preferido.  Não são necessárias dependências adicionais – é um site estático.
+3. (Opcional) Para testar a versão hospedada, faça o deploy em plataformas como [Vercel](https://vercel.com) ou GitHub Pages.
+
+## 👌 Licença
+
+Este projeto foi construído para fins de estudo.  Sinta‑se à vontade para reutilizá‑lo ou adaptá‑lo em seus próprios projetos.
